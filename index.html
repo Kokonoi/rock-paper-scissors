@@ -11,10 +11,26 @@
       //   Array for choices in the game
       const choices = ["Rock", "Paper", "Scissors"];
 
-      //   Function for computer choices
+      //   Function for computer choice
       function getComputerChoice() {
         let number = Math.floor(Math.random() * 3);
         let answer = choices[number];
+        return answer;
+      }
+      //   Function for player choice
+
+      function getPlayerChoice() {
+        let choice = prompt("Type your choice");
+        // FUnction to check player's choice
+        // choice = choice.toLowerCase();
+        // while (choice != "rock" && choice != "paper" && choice != "scissors") {
+        //   let choice = prompt(
+        //     "Please enter your choice of 'rock', 'paper', or 'scissors':"
+        //   );
+        //   choice = choice.toLowerCase();
+        // }
+        let answer = choice[0].toUpperCase() + choice.slice(1).toLowerCase();
+
         return answer;
       }
 
@@ -46,7 +62,7 @@
         }
       }
 
-      const playerSelection = "Paper";
+      const playerSelection = getPlayerChoice();
       const computerSelection = getComputerChoice();
       playRound(playerSelection, computerSelection);
     </script>
