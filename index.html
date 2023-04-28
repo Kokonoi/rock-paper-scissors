@@ -20,35 +20,29 @@
 
       //   Function for round made with if statements
       function playRound(playerSelection, computerSelection) {
-        if ((playerSelection = "Rock") && (computerSelection = "Scissors")) {
+        if (playerSelection == "Rock" && computerSelection == "Scissors") {
           console.log("You Win! Rock beats Scissors ");
         } else if (
-          (playerSelection = "Scissors") &&
-          (computerSelection = "Rock")
+          playerSelection == "Scissors" &&
+          computerSelection == "Rock"
         ) {
           console.log("You Lose! Rock beats Scissors");
         } else if (
-          (playerSelection = "Paper") &&
-          (computerSelection = "Scissors")
+          playerSelection == "Paper" &&
+          computerSelection == "Scissors"
         ) {
           console.log("You Lose! Scissors beats Paper");
         } else if (
-          (playerSelection = "Scissors") &&
-          (computerSelection = "Paper")
+          playerSelection == "Scissors" &&
+          computerSelection == "Paper"
         ) {
           console.log("You Win! Scissors beats Paper");
-        } else if (
-          (playerSelection = "Rock") &&
-          (computerSelection = "Paper")
-        ) {
+        } else if (playerSelection == "Rock" && computerSelection == "Paper") {
           console.log("You Lose! Paper beats Scissors");
-        } else if (
-          (playerSelection = "Paper") &&
-          (computerSelection = "Rock")
-        ) {
+        } else if (playerSelection == "Paper" && computerSelection == "Rock") {
           console.log("You Win! Paper beats Scissors");
         } else {
-          console.log("Tie");
+          console.log("It's a tie");
         }
       }
 
