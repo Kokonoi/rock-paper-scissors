@@ -60,8 +60,9 @@
         let playerWins = 0;
         let computerWins = 0;
 
-        // Loop that plays 5 rounds
-        for (let i = 0; i < 5; i++) {
+        // Loop that plays until someone wins
+        let i = 0;
+        while (i < 5) {
           // Variables that store players' choices
           const playerSelection = getPlayerChoice();
           const computerSelection = getComputerChoice();
@@ -72,10 +73,12 @@
           // Statements to check who wins
           if (roundRes.includes("Win")) {
             playerWins++;
+            i++;
           } else if (roundRes.includes("Lose")) {
             computerWins++;
+            i++;
           } else {
-            return;
+            // do nothing
           }
 
           console.log(playerWins);
