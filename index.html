@@ -21,20 +21,12 @@
       // Function for player choice
       function getPlayerChoice() {
         let choice = prompt("Type your choice");
-        // Function to check player's choice
-        // choice = choice.toLowerCase();
-        // while (choice != "rock" && choice != "paper" && choice != "scissors") {
-        //   let choice = prompt(
-        //     "Please enter your choice of 'rock', 'paper', or 'scissors':"
-        //   );
-        //   choice = choice.toLowerCase();
-        // }
         let answer = choice[0].toUpperCase() + choice.slice(1).toLowerCase();
 
         return answer;
       }
 
-      //   Function for round made with if statements
+      // Function for round made with if statements
       function playRound(playerSelection, computerSelection) {
         if (playerSelection == "Rock" && computerSelection == "Scissors") {
           return "You Win! Rock beats Scissors ";
@@ -62,27 +54,42 @@
         }
       }
 
-      // Function that counts rounds and starts a game
+      // Function that counts rounds and starts the game
       function game() {
+        // Variables that store players' wins
+        let playerWins = 0;
+        let computerWins = 0;
+
+        // Loop that plays 5 rounds
         for (let i = 0; i < 5; i++) {
           // Variables that store players' choices
           const playerSelection = getPlayerChoice();
           const computerSelection = getComputerChoice();
 
-          // Variables that store players' wins
-          let playerWins = 0;
-          let computerWins = 0;
+          let roundRes = playRound(playerSelection, computerSelection);
+          console.log(roundRes);
+
+          // Statements to check who wins
+          if (roundRes.includes("Win")) {
+            playerWins++;
+          } else if (roundRes.includes("Lose")) {
+            computerWins++;
+          } else {
+            return;
+          }
+
+          console.log(playerWins);
+          console.log(computerWins);
 
           // Plays a round and returns a value
-          let score = console.log(
-            playRound(playerSelection, computerSelection)
-          );
           // Statements to check who gets a point
-          if (score.includes("Win")) {
-            playerWins++;
-          } else if (score.includes("Lose")) {
-            computerWins++;
-          }
+        }
+
+        // Decides a winner
+        if (playerWins > computerWins) {
+          console.log("Player Wins!");
+        } else {
+          console.log("Computer Wins!");
         }
       }
 
