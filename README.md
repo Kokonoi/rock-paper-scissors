@@ -13,7 +13,7 @@ This is a simple Rock-Paper-Scissors game that you can play by clicking buttons.
 <li>Select a new choice to start a new game.</li>
 </ol>
 
-<h3>Technologies Used<h3>
+<h3>Technologies Used</h3>
 This game was built using the following technologies:
 
 <ul>
