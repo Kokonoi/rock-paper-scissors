@@ -21,6 +21,6 @@ This game was built using the following technologies:
 <li>HTML</li>
 <li>CSS</li>
 <li>JavaScript</li>
-<ul/>
+</ul>
 <h3>Contributing</h3>
 Contributions are welcome! If you find a bug or have a feature request, please open an issue. If you would like to contribute code, please fork the repository and create a pull request.
