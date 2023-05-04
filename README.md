@@ -11,7 +11,7 @@ This is a simple Rock-Paper-Scissors game that you can play by clicking buttons.
 <li>The winner of the round will be announced.</li>
 <li>The first player to reach 5 points wins the game.</li>
 <li>Select a new choice to start a new game.</li>
-<ol/>
+</ol>
 
 <h3>Technologies Used<h3>
 This game was built using the following technologies:
