@@ -1,5 +1,6 @@
 <h1>Rock-Paper-Scissors Game</h1>
 This is a simple Rock-Paper-Scissors game that you can play by clicking buttons. The first player to reach 5 points wins the game.
+<hr>
 
 <h3>How to Play</h3>
 <ol>
@@ -12,12 +13,14 @@ This is a simple Rock-Paper-Scissors game that you can play by clicking buttons.
 <li>Select a new choice to start a new game.</li>
 <ol/>
 
-Technologies Used
+<h3>Technologies Used<h3>
 This game was built using the following technologies:
 
-HTML
-CSS
-JavaScript
+<ul>
 
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<ul/>
 <h3>Contributing</h3>
 Contributions are welcome! If you find a bug or have a feature request, please open an issue. If you would like to contribute code, please fork the repository and create a pull request.
